@@ -12,13 +12,10 @@ class Home extends StatelessWidget {
     switch(_bottomNavigationProvider!.currentPage){
       case 0:
         return Friend();
-        break;
       case 1:
         return Message();
-        break;
       case 2:
         return Setting();
-        break;
     }
     return Container();
   }
@@ -26,9 +23,9 @@ class Home extends StatelessWidget {
   Widget _bottomNavigationWidget() {
     return BottomNavigationBar(
       items: [
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: "home"),
-        BottomNavigationBarItem(icon: Icon(Icons.messenger), label: "message"),
-        BottomNavigationBarItem(icon: Icon(Icons.settings), label: "settings"),
+        BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.messenger), label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.settings), label: ""),
       ],
       currentIndex: _bottomNavigationProvider!.currentPage,
       selectedItemColor: Colors.black,
